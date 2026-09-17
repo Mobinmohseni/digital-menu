@@ -1,0 +1,3 @@
+import type { MenuItem } from "@/types/menu";
+import { MenuCard } from "@/components/MenuCard";
+export function FeaturedItems({ items }: { items: MenuItem[] }) { if (!items.length) return null; return <section id="featured" className="mx-auto max-w-6xl px-4 py-10 sm:px-6"><div className="mb-5 flex items-end justify-between"><div><p className="text-xs font-bold text-[var(--accent)]">انتخاب سرآشپز</p><h2 className="mt-1 text-2xl font-extrabold">پیشنهادهای ویژه</h2></div></div><div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">{items.slice(0, 4).map(item => <MenuCard key={item.id} item={item}/>)}</div></section>; }

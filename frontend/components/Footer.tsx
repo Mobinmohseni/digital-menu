@@ -1,0 +1,1 @@
+export function Footer() { return <footer id="about" className="mt-12 border-t border-[var(--border)]"><div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between sm:px-6"><p>کافه‌خانه · منوی دیجیتال</p><p>طعم خوب، ساده و تازه.</p></div></footer>; }
